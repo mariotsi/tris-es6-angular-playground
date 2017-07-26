@@ -14,6 +14,8 @@ import AppCore from './core';
 import { AppComponent } from './app.component';
 
 import Home from './components/home';
+import Block from './components/block';
+import PlayerPlate from './components/playerPlate';
 
 const appName = 'myApp';
 
@@ -29,7 +31,9 @@ angular.module(appName, [
   AppCore,
 
   // ui-components
-  Home
+  Home,
+  Block,
+  PlayerPlate
 ])
 .config(config)
 .component(AppComponent.selector, AppComponent);
