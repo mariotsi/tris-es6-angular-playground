@@ -1,4 +1,4 @@
-const path = require('path');
+ const path = require('path');
 const webpack = require('webpack');
 const ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -83,6 +83,7 @@ module.exports = {
       fileName: 'vendors.[hash].js',
       minChunks: Infinity
     }),
+    new webpack.ProvidePlugin({'window.jQuery': 'jquery'}),
     new webpack.optimize.AggressiveMergingPlugin({}),
     new webpack.optimize.OccurenceOrderPlugin(true),
     new ExtractTextPlugin('[name].[hash].style.css'),
