@@ -1,0 +1,26 @@
+player-plate{
+  width: 100%;
+  div {
+    input {
+      border: 0;
+      font-size: 22px;
+      width: 100%;
+      text-align: center;
+      background: transparent;
+    }
+    &.active {
+      input {
+        animation: hurry-up .5s ease-in-out infinite alternate;
+      }
+    }
+  }
+}
+
+@keyframes hurry-up {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}

@@ -1,6 +1,6 @@
-//import './block.less';
+import './playerPlate.less';
 import template from "./playerPlate.html";
-import angular from "angular";
+
 
 export let PlayerPlateComponent = {
   templateUrl: template,

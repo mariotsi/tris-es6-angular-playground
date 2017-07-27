@@ -18,8 +18,8 @@ export default angular.module('playerPlate', [
 /* @ngInject */
 function config ($stateProvider) {
   // $stateProvider
-  //     .state('home', {
-  //         url: '/home',
+  //     .state('Tris', {
+  //         url: '/Tris',
   //         template: '<other></other>'
   //     });
 }

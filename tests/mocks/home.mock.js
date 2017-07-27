@@ -1,3 +1,3 @@
 module.exports = {
-  'title': 'feels like home'
+  'title': 'feels like Tris'
 };

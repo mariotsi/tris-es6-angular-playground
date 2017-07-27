@@ -13,7 +13,7 @@ import LocalStorageModule from 'angular-local-storage';
 import AppCore from './core';
 import { AppComponent } from './app.component';
 
-import Home from './components/home';
+import Tris from './components/Tris';
 import Block from './components/block';
 import PlayerPlate from './components/playerPlate';
 import Board from './components/board';
@@ -32,7 +32,7 @@ angular.module(appName, [
   AppCore,
 
   // ui-components
-  Home,
+  Tris,
   Block,
   PlayerPlate,
   Board

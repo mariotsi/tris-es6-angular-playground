@@ -1,11 +1,16 @@
-<div class="HomeContainer">
+<div class="TitleContainer">Tris Game</div>
+<div class="TrisContainer">
     <div class="playerCointainer">
         <player-plate player=$ctrl.players.player1 on-name-change="$ctrl.setPlayerName('player1', name)"></player-plate>
     </div>
     <div class="boardCointainer">
-        <board players="$ctrl.players"></board>
+        <board players="$ctrl.players" on-tie="$ctrl.tie()" on-winner="$ctrl.setWinner(player)"></board>
     </div>
     <div class="playerCointainer">
         <player-plate player=$ctrl.players.player2 on-name-change="$ctrl.setPlayerName('player2', name)"></player-plate>
     </div>
+</div>
+<div class="WinnerContainer" >
+    <div ng-if="$ctrl.winnerPlayer">The Winner is {{$ctrl.winnerPlayer.name}}!</div>
+    <div ng-if="$ctrl.isTie">Tie, no one won!</div>
 </div>

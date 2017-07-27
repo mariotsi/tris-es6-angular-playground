@@ -1,6 +1,3 @@
-<div ng-style="{'color':$ctrl.player.color}">
-  <input data-id=$ctrl.player.name ng-change="$ctrl.changeName()" ng-model=$ctrl.player.name select-on-click></input>
-
-{{$ctrl.player.sign}}
-{{$ctrl.player.ro}}
+<div ng-class="{active:$ctrl.player.hisTurn}">
+  <input ng-style="{'color':$ctrl.player.color}" data-id=$ctrl.player.name ng-change="$ctrl.changeName()" ng-model=$ctrl.player.name select-on-click maxlength="14"/>
 </div>
