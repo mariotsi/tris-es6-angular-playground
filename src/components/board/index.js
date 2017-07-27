@@ -11,8 +11,8 @@ export default angular.module('board', [
 ])
   .config(config)
   .component(BoardComponent.selector, BoardComponent)
-.name;
-  // .config(config);
+  .name;
+// .config(config);
 
 /* @ngInject */
 function config ($stateProvider) {

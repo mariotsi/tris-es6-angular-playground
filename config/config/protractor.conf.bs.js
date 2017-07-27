@@ -30,6 +30,6 @@ exports.config = {
   },
 
   jasmineNodeOpts: {
-     print: function() {}
+    print: function() {}
   }
-}
+};

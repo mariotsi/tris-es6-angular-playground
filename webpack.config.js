@@ -1,4 +1,4 @@
- const path = require('path');
+const path = require('path');
 const webpack = require('webpack');
 const ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');

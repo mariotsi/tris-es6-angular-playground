@@ -4,7 +4,7 @@ import template from './board.html';
 function is(player) {
   return function (element) {
     return element.player && element.player.id === player;
-  }
+  };
 }
 function checkArray(candidate) {
   if (candidate.every(is('player1'))) {

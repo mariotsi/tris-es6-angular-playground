@@ -1,9 +1,9 @@
 import angular from 'angular';
 
 angular.module('myApp')
-    .config(config);
+  .config(config);
 
 /* @ngInject */
 function config ($compileProvider) {
-	$compileProvider.debugInfoEnabled(true);
+  $compileProvider.debugInfoEnabled(true);
 }

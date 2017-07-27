@@ -12,8 +12,8 @@ export default angular.module('playerPlate', [
   .config(config)
   .component(PlayerPlateComponent.selector, PlayerPlateComponent)
   .directive('selectOnClick',() => new SelectOnClickDirective())
-.name;
-  // .config(config);
+  .name;
+// .config(config);
 
 /* @ngInject */
 function config ($stateProvider) {

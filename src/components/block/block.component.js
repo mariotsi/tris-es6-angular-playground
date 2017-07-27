@@ -17,7 +17,7 @@ export let BlockComponent = {
       Object.assign(this, { $state });
       this.title = 'SuperNova';
       this.note = 'Angular 1.5x, Es6, Karma, Jasmine & Webpack, ui-router';
-      console.log(this.value)
+      console.log(this.value);
     }
   }
 };

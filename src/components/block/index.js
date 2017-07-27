@@ -11,8 +11,8 @@ export default angular.module('block', [
 ])
   .config(config)
   .component(BlockComponent.selector, BlockComponent)
-.name;
-  // .config(config);
+  .name;
+// .config(config);
 
 /* @ngInject */
 function config ($stateProvider) {

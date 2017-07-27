@@ -6,4 +6,4 @@ export default angular.module('app.core', [
   components.name,
   services.name
 ])
-.name;
+  .name;

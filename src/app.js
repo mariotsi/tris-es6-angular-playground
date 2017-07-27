@@ -37,8 +37,8 @@ angular.module(appName, [
   PlayerPlate,
   Board
 ])
-.config(config)
-.component(AppComponent.selector, AppComponent);
+  .config(config)
+  .component(AppComponent.selector, AppComponent);
 
 /* @ngInject */
 function config ($stateProvider, $urlRouterProvider, localStorageServiceProvider) {

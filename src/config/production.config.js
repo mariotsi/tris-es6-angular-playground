@@ -1,9 +1,9 @@
 import angular from 'angular';
 
 angular.module('Tris')
-    .config(config);
+  .config(config);
 
 /* @ngInject */
 function config ($compileProvider) {
-	$compileProvider.debugInfoEnabled(false);
+  $compileProvider.debugInfoEnabled(false);
 }

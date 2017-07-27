@@ -62,7 +62,7 @@ module.exports = {
       test: /\.(jpg|png|gif)$/,
       loader: 'file'
     }
-  ]},
+    ]},
   plugins: [
     new ngAnnotatePlugin({
       add: true
