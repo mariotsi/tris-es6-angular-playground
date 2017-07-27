@@ -16,8 +16,9 @@ import { AppComponent } from './app.component';
 import Home from './components/home';
 import Block from './components/block';
 import PlayerPlate from './components/playerPlate';
+import Board from './components/board';
 
-const appName = 'myApp';
+const appName = 'Tris';
 
 angular.module(appName, [
   // framework wide components
@@ -33,7 +34,8 @@ angular.module(appName, [
   // ui-components
   Home,
   Block,
-  PlayerPlate
+  PlayerPlate,
+  Board
 ])
 .config(config)
 .component(AppComponent.selector, AppComponent);

@@ -1,6 +1,6 @@
 import angular from 'angular';
 
-angular.module('myApp')
+angular.module('Tris')
     .config(config);
 
 /* @ngInject */

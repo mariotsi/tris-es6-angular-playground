@@ -10,21 +10,23 @@ export let HomeComponent = {
   controller: class HomeCtrl {
     /* @ngInject */
     constructor($state, $timeout) {
-      this.player1 = new Player('Player 1','X', 'blue');
-      this.player2= new Player('Player 2','O', 'red');
+      this.players = {
+        player1: new Player('Player 1', 'times', 'blue'),
+        player2: new Player('Player 2', 'circle-o', 'red')
+      };
       // TODO - constructor arguments that should be available on "this"
       // should be added to the assign object
-      Object.assign(this, { $state });
-      this.title = 'SuperNova';
-      this.note = 'Angular 1.5x, Es6, Karma, Jasmine & Webpack, ui-router';
-      this.vv = 'X';
-      
+      Object.assign(this, {$state});
 
-      $timeout((()=>{this.vv='O'}).bind(this), 1000);
+
+      $timeout((() => {
+        this.vv = 'O'
+      }).bind(this), 1000);
     }
-    setPlayerName(player, name){
-      this[player].name = name;
-      this[player].ro = name+'ro';
+
+    setPlayerName(player, name) {
+      this.players[player].name = name;
+      this.players[player].ro = name + 'ro';
 
     }
   }

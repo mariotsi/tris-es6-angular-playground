@@ -1,4 +1,4 @@
-//import './block.less';
+import './block.less';
 import template from './block.html';
 
 export let BlockComponent = {
@@ -6,7 +6,7 @@ export let BlockComponent = {
   selector: 'block',
   bindings: {
     value: '<',
-    player: '<'
+    onBlockClicked: '&'
   },
   /* @ngInject */
   controller: class BlockCtrl {
@@ -17,6 +17,7 @@ export let BlockComponent = {
       Object.assign(this, { $state });
       this.title = 'SuperNova';
       this.note = 'Angular 1.5x, Es6, Karma, Jasmine & Webpack, ui-router';
+      console.log(this.value)
     }
   }
 };

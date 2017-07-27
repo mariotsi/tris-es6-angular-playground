@@ -1,0 +1,31 @@
+block {
+  width: 33%;
+  position: relative;
+  border: 1px solid lightblue;
+  div{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    &.active{
+      i {
+        animation: bounce .40s linear;
+      }
+    }
+  }
+  &:before {
+    content:'';
+    float:left;
+    padding-top:100%;
+  }
+  .fa {
+    font-size: 100px;
+  }
+}
+
+@keyframes bounce {
+  0%{ transform:scale(0) ; opacity:0;}
+  50%{ transform:scale(1.3) ; opacity:0.8; }
+  75%{ transform:scale(0.9); opacity:0.9;}
+  100%{ transform:scale(1) ; opacity:1;}
+}
